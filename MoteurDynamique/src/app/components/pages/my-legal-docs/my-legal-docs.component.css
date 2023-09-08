@@ -1,0 +1,26 @@
+.table {
+    min-height: 400px;
+    width:1050px ;
+    margin: 25px 0;
+    border-collapse: collapse;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(57, 56, 56, 0.15);
+    table-layout: fixed;
+    background-color: #ffffff;
+  }
+  .header th {
+    background: linear-gradient(to top, #574ca0 50%, #6e6ef6 90%) no-repeat;
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+  }
+  .table-body td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+
+  button{
+    width: 100px;
+  }

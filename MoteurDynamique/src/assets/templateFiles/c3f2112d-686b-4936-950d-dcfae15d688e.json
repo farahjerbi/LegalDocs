@@ -1,0 +1,137 @@
+{
+    "Id": "c3f2112d-686b-4936-950d-dcfae15d688e",
+    "Name": "Last Will and Testament",
+    "State": "active",
+    "Style": "official",
+    "GridDisplay": 3,
+    "IdLanguage": "DFF166CA-6229-4C7F-89F1-7C08BDD4F145",
+    "IdDoc": "676b6bc8-2bd4-42f7-88d6-6be555a98cea",
+    "groups": [
+      {
+        "groupId": "97cbb3e0-02bd-4611-85df-24d0e60bfc85",
+        "titleSection": "Testator Information",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "b150acb5-90b5-422b-bc3d-705c0d35ad4b",
+            "entityName": "Testator",
+            "title": "Testator's Full Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "18ba3d1b-23f0-4233-a2ac-6cdfa74aec10",
+            "entityName": "Testator",
+            "title": "Date of Birth",
+            "type": "date",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "date",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "4cbe36c7-1815-4d9d-88bd-bb11a6be5ea4",
+            "entityName": "Testator",
+            "title": "Address",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "groupId": "44fc0902-584e-45ad-b7bd-a895e51250df",
+        "titleSection": "Executor Information",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "9ed4ff60-e725-435b-a2ce-004983f05b5a",
+            "entityName": "Executor",
+            "title": "Executor's Full Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "ced2265b-7058-4da6-bb03-e8c141acd403",
+            "entityName": "Executor",
+            "title": "Executor's Address",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "groupId": "15f7761a-cb04-4dae-a9fa-c0950a6cab70",
+        "titleSection": "Asset Distribution",
+        "isRepeatCard": true,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "a72d752d-3057-4464-93a0-b8098c7f1483",
+            "entityName": "AssetDistribution",
+            "title": "Asset Description",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "b29ac88b-e5ab-4791-8125-b126ac8f72f9",
+            "entityName": "AssetDistribution",
+            "title": "Beneficiary's Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,73 @@
+<p>update-doc works!</p>
+<div class="outer">
+    <div class="card card-registration my-4" style="width: 1200px;">
+      <div class="row g-0">
+        <ngx-extended-pdf-viewer 
+        style="width: 50%;"
+        [src]="pdfUrl"  [height]="'auto'" 
+        [useBrowserLocale]="true" 
+        [textLayer]="true"
+        [showHandToolButton]="true"></ngx-extended-pdf-viewer>
+        
+        <div class="col-xl-6">
+          <div class="card-body p-md-5 text-black" >
+            <h3 class="mb-5 text-uppercase" > Update Form</h3>
+
+            <form *ngIf="templateForm" [formGroup]="templateForm">
+              <ng-container *ngFor="let alias of aliasData">
+                <div [ngSwitch]="alias.typeSetting.fieldType">
+
+            <div class="form-outline mb-4" *ngSwitchCase="'text'" >
+              <input type="text" [formControlName]="alias.id" [required]="alias.typeSetting.required" class="form-control form-control-lg" *ngIf="!alias.typeSetting.readOnly" />
+              <label class="form-label" for="form3Example8">{{ alias.title }}</label>
+            </div>
+
+              <div class="col-md-6 mb-4" *ngSwitchCase="'select'" >
+
+                <select [formControlName]="alias.id" [required]="alias.typeSetting.required" class="select" *ngIf="!alias.typeSetting.readOnly">
+                  <option *ngFor="let option of alias.typeSetting.defaultValue" [value]="option">{{ option }} : {{alias.typeSetting.defaultValue}}</option>
+                </select>
+
+              </div>
+              
+
+            <div class="form-outline mb-4" *ngSwitchCase="'textarea'">
+              <textarea [formControlName]="alias.id" [required]="alias.typeSetting.required" class="form-control form-control-lg" *ngIf="!alias.typeSetting.readOnly" ></textarea>
+              <label class="form-label" for="form3Example9">{{ alias.title }} : {{alias.typeSetting.defaultValue}}</label>
+            </div>
+
+            <div class="form-outline mb-4" *ngSwitchCase="'date'">
+              <input type="date" [formControlName]="alias.id" [required]="alias.typeSetting.required" class="form-control form-control-lg" *ngIf="!alias.typeSetting.readOnly" />
+              <label class="form-label" for="form3Example9">{{ alias.title }}  : {{alias.typeSetting.defaultValue}}</label>
+            </div>
+            
+          <div class="form-outline mb-4" *ngSwitchCase="'file'">
+            <input type="file" [formControlName]="alias.id" [required]="alias.typeSetting.required" class="form-control form-control-lg" 
+              (change)="getFile($event,alias.id)" *ngIf="!alias.typeSetting.readOnly"/>
+            <label class="form-label" for="form3Example9">{{ alias.title }} : {{alias.typeSetting.defaultValue}}</label>
+          </div>
+
+
+            <div class="form-outline mb-4" *ngSwitchCase="'number'">
+              <input type="number" [formControlName]="alias.id" [required]="alias.typeSetting.required" class="form-control form-control-lg" *ngIf="!alias.typeSetting.readOnly"/>
+              <label class="form-label" for="form3Example9">{{ alias.title }} : {{alias.typeSetting.defaultValue}}</label>
+            </div>
+
+                </div>
+              </ng-container>
+          </form>
+
+          <div class="d-flex justify-content-end pt-3">
+            <button type="button" class="btn btn-light btn-lg" (click)="goBack()">Go Back</button>
+            <button type="button" class="btn btn-warning btn-lg ms-2" (click)="logFormValues()" [disabled]="isFileUploading" >Update form</button>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+</div>

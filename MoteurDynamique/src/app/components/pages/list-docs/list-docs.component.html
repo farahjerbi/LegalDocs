@@ -1,0 +1,69 @@
+     <div class="outer " >
+
+          <img src="../../../assets/images/logo.png" alt='logo' style="size: 50px;" />
+        
+                <div class="container">
+
+                      <div class="row height d-flex justify-content-center align-items-center">
+            
+                          <div class="col-md-6">
+                            <div class="form">
+                              <i class="fa fa-search"></i>
+                              <input type="text" class="form-control form-input" placeholder="Search Doc By name..." [(ngModel)]="searchDoc">
+                            </div>
+                            
+                          </div>
+                        </div>
+                        
+                      </div>   
+
+
+                      <div class="filter">
+                        <div class="tags" *ngFor="let d of Status" >
+                          <p (click)="filterByTag(d.type)" [ngStyle]="{'background-color':d.value ? '#311777' : '#beb2dd' }">
+                            {{d.type}}
+                            <i [ngClass]="getStatus(d.type)" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                        <div class="tags" >
+                          <p (click)="openModalStatistic()" style="background-color: rgb(229, 133, 116);">
+                            Statistics
+                            <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                          </p>
+                        </div>
+                      </div>
+                     
+
+
+                      <div class="table-container" >
+                        <table class="table table-hover " id="htmlData">
+                            <thead class="thead-light" >
+                            <tr class="header">
+                                <th scope="col"><i class="fa fa-circle-o" aria-hidden="true"></i>ID DOC</th>
+                                <th scope="col"><i class="fa fa-square-o" aria-hidden="true"></i>ID TEMPLATE</th>
+                                <th scope="col"> <i class="fa fa-file-pdf-o" aria-hidden="true" ></i>NAME DOC</th>
+                                <th scope="col"> <i class="fa fa-language" aria-hidden="true"></i>Status</th>
+                                <th scope="col"> <i class="fa fa-language" aria-hidden="true"></i>Modal</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table-body" 
+                            *ngFor="let d of ( Data | paginate: { itemsPerPage: itemsPerPage, currentPage: p } | search: searchDoc);
+                             let last = last" [ngClass]="{'last-row': last}">
+                            <tr>
+                                <td> {{d.IdDoc}} </td>
+                                <td>{{d.IdTemplate}}</td>
+                                <td class="DocName"><h6>{{d.NameDoc}}</h6> </td>
+                                <td>{{d.Status}}</td>
+                                <td> <button class="btn btn-primary" (click)="openModal(d.IdTemplate)"> Modal EN/FR</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                            <div class="pagination-container">
+                                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+  
+
+

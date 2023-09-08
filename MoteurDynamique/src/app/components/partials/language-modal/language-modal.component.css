@@ -1,0 +1,43 @@
+.btn-l {
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  background-color: rgb(77, 57, 182);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-l:hover {
+  background-color: rgb(75, 137, 224);
+}
+
+.btn-l:active {
+  background-color: rgb(75, 137, 224);
+}
+
+.modal-header{
+  background-color: rgb(202, 198, 220);
+  min-height: 50px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;}
+
+.btn-close{
+  color: rgb(243, 234, 223);
+}
+
+.fa{
+  font-size: 100px;
+  margin-bottom: 15px;
+}

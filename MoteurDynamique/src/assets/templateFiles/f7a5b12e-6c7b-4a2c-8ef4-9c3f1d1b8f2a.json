@@ -1,0 +1,137 @@
+{
+    "Id": "f7a5b12e-6c7b-4a2c-8ef4-9c3f1d1b8f2a",
+    "Name": "Rental Agreement",
+    "State": "active",
+    "Style": "official",
+    "GridDisplay": 3,
+    "IdLanguage": "DFF166CA-6229-4C7F-89F1-7C08BDD4F145",
+    "IdDoc": "2ee9719e-9e70-467c-a17a-54b5f10f81a5",
+    "groups": [
+      {
+        "groupId": "e5c6a2c3-6e2b-4c0d-a7e7-8dd72f8a9e1f",
+        "titleSection": "Landlord Information",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "a1e4d0c5-96f5-49f2-8a25-1b1f8dbb66b2",
+            "entityName": "Landlord",
+            "title": "Landlord's Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "b7840dca-4e3c-413e-9e06-8d15c1e1f5a1",
+            "entityName": "Landlord",
+            "title": "Landlord's Address",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "groupId": "f2d44b6e-74a0-46ac-b190-98674c0a432c",
+        "titleSection": "Tenant Information",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "d5c68b4f-865a-4e8f-a34a-2d021d9c2e76",
+            "entityName": "Tenant",
+            "title": "Tenant's Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "c7b2b9d1-0d3d-4cc7-9681-c0fc3a18d6a1",
+            "entityName": "Tenant",
+            "title": "Tenant's Address",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "groupId": "e17fca81-d7a0-4da3-8f42-6a07f53e4f3d",
+        "titleSection": "Rental Details",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "f4d9565a-6724-4b66-9ef0-4be01eaed0a1",
+            "entityName": "Rental",
+            "title": "Property Address",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "AFH Mrezga,Nabeul",
+              "readOnly": true,
+              "required": true
+            }
+          },
+          {
+            "id": "e2a35c25-0e3f-40d1-9a2d-7d1c8b70b4a1",
+            "entityName": "Rental",
+            "title": "Monthly Rent (USD)",
+            "type": "number",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "number",
+              "defaultValue": "700DT",
+              "readOnly": true,
+              "required": true
+            }
+          },
+          {
+            "id": "b392a18e-7a14-4bb9-b69f-dc9c84a9c2b2",
+            "entityName": "Rental",
+            "title": "Lease Term (Months)",
+            "type": "number",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "number",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

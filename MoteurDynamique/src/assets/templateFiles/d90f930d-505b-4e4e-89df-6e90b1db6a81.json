@@ -1,0 +1,136 @@
+{
+  "Id": "d90f930d-505b-4e4e-89df-6e90b1db6a81",
+  "Name": "Loan Agreement",
+  "State": "active",
+  "Style": "official",
+  "GridDisplay": 3,
+  "IdLanguage": "DFF166CA-6229-4C7F-89F1-7C08BDD4F145",
+  "IdDoc": "dff166ca-6229-4c7f-89f1-7c08bdd4f162",
+  "groups": [
+    {
+      "groupId": "c8221c92-31e7-42e5-9e2d-4eb4a4762b7f",
+      "titleSection": "Borrower Information",
+      "isRepeatCard": false,
+      "disabled": false,
+      "gridDisplay": 1,
+      "aliases": [
+        {
+          "id": "5c4b711e-3eae-451b-9e3f-7a3a5962d200",
+          "entityName": "Borrower",
+          "title": "Borrower's Name",
+          "type": "text",
+          "display": "show",
+          "source": "manual",
+          "typeSetting": {
+            "fieldType": "text",
+            "defaultValue": "",
+            "readOnly": false,
+            "required": true
+          }
+        },
+        {
+          "id": "b294872a-c4ea-4e0e-8b76-cc75b8f135b4",
+          "entityName": "Borrower",
+          "title": "Borrower's Address",
+          "type": "text",
+          "display": "show",
+          "source": "manual",
+          "typeSetting": {
+            "fieldType": "text",
+            "defaultValue": "",
+            "readOnly": false,
+            "required": true
+          }
+        }
+      ]
+    },
+    {
+      "groupId": "b35a588d-36f1-4f03-967a-e3eabe8e6e82",
+      "titleSection": "Loan Details",
+      "isRepeatCard": false,
+      "disabled": false,
+      "gridDisplay": 1,
+      "aliases": [
+        {
+          "id": "32e93f20-2973-4ca5-9d06-0a1ac3604c32",
+          "entityName": "Loan",
+          "title": "Loan Amount",
+          "type": "number",
+          "display": "show",
+          "source": "manual",
+          "typeSetting": {
+            "fieldType": "currency",
+            "defaultValue": "23000DT",
+            "readOnly": false,
+            "required": true
+          }
+        },
+        {
+          "id": "9025f184-97b2-4e04-9fe9-1edc3b8d5a6a",
+          "entityName": "Loan",
+          "title": "Loan Term (Months)",
+          "type": "number",
+          "display": "show",
+          "source": "manual",
+          "typeSetting": {
+            "fieldType": "number",
+            "defaultValue": "",
+            "readOnly": false,
+            "required": true
+          }
+        },
+        {
+          "id": "8c8905c0-982a-46d0-8b10-7f3c83f11b81",
+          "entityName": "Loan",
+          "title": "Interest Rate (%)",
+          "type": "number",
+          "display": "show",
+          "source": "manual",
+          "typeSetting": {
+            "fieldType": "number",
+            "defaultValue": "",
+            "readOnly": false,
+            "required": true
+          }
+        }
+      ]
+    },
+    {
+      "groupId": "853d450c-54fc-499b-a597-e1424d83c047",
+      "titleSection": "Lender Information",
+      "isRepeatCard": false,
+      "disabled": false,
+      "gridDisplay": 1,
+      "aliases": [
+        {
+          "id": "e8a16325-eaf6-4c1a-b9cd-992f86c74e2d",
+          "entityName": "Lender",
+          "title": "Lender's Name",
+          "type": "text",
+          "display": "show",
+          "source": "manual",
+          "typeSetting": {
+            "fieldType": "text",
+            "defaultValue": "",
+            "readOnly": false,
+            "required": true
+          }
+        },
+        {
+          "id": "a49f614f-0f8a-40e1-b0dd-362c9dd1fe10",
+          "entityName": "Lender",
+          "title": "Lender's Signature",
+          "type": "signature",
+          "display": "show",
+          "source": "manual",
+          "typeSetting": {
+            "fieldType": "file",
+            "defaultValue": "",
+            "readOnly": false,
+            "required": false
+          }
+        }
+      ]
+    }
+  ]
+}

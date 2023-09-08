@@ -1,0 +1,15 @@
+  <div class="modal-header">
+  </div>
+  <div class="modal-body">
+    <i class="fa fa-language" aria-hidden="true"></i>
+    <p>Choose a Language!</p>
+    <div>
+      <button class="btn-l" [routerLink]="'template/en/' + docName" (click)="activeModal.close('Close click')">ENGLISH</button>
+      <button class="btn-l" [routerLink]="'template/fr/' + docName" (click)="activeModal.close('Close click')">FRENSH</button>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-secondary" (click)="activeModal.close('Close click')">Close</button>
+  </div>
+
+  

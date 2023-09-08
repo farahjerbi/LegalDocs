@@ -1,0 +1,37 @@
+.sidebar {
+    width: 150px;
+    background-color:rgb(117, 117, 188);
+    color: #fff;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    padding-top: 20px;
+    bottom: 0;
+    top: 0;
+  }
+  
+  .sidebar-nav {
+    margin-top: 50px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-item {
+    padding: 20px;
+  }
+  
+  .sidebar-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar-item:hover {
+    cursor: pointer;
+    background-color: #7981d2;
+  }
+  

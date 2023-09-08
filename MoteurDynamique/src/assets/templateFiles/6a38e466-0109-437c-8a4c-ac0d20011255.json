@@ -1,0 +1,100 @@
+{
+    "Id": "6a38e466-0109-437c-8a4c-ac0d20011255",
+    "Name": "Agreement between Bank and IT Company",
+    "State": "active",
+    "Style": "formal",
+    "GridDisplay": 2,
+    "IdLanguage": "DFF166CA-6229-4C7F-89F1-7C08BDD4F390",
+    "IdDoc": "435e483f-a60d-421d-80c7-b7bca8bd3982",
+    "groups": [
+      {
+        "groupId": "ab6d1d15-9aa6-4159-b44c-7e063e3a39f0",
+        "titleSection": "Parties Involved",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "8e0b06b9-1fbf-41a1-9b87-8c0c7823ef4d",
+            "entityName": "Party",
+            "title": "Bank's Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "c8b58dd4-0a68-456e-8cc5-c130430e13a3",
+            "entityName": "Party",
+            "title": "IT Company's Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "groupId": "ef97b042-5c66-4b4b-a456-7ab197c82794",
+        "titleSection": "Agreement Details",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "1f7e0c89-e9db-4094-bf7d-6e4b35a2e62f",
+            "entityName": "Agreement",
+            "title": "Agreement Amount",
+            "type": "number",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "currency",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "f87f6aa5-df02-4317-bded-981872215b1e",
+            "entityName": "Agreement",
+            "title": "Agreement Duration (Months)",
+            "type": "number",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "number",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "513f9d0e-c49d-4f09-b8f5-9c3c1800cada",
+            "entityName": "Party",
+            "title": "Party's Signature",
+            "type": "signature",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "file",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": false
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

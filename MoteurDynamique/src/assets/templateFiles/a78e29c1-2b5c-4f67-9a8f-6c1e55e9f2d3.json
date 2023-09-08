@@ -1,0 +1,123 @@
+{
+    "Id": "a78e29c1-2b5c-4f67-9a8f-6c1e55e9f2d3",
+    "Name": "Non-Disclosure Agreement (NDA)",
+    "State": "active",
+    "Style": "official",
+    "GridDisplay": 3,
+    "IdLanguage": "DFF166CA-6229-4C7F-89F1-7C08BDD4F145",
+    "IdDoc": "bcea593f-44fa-4f4a-8f64-3a6c3c41d9b5",
+    "groups": [
+      {
+        "groupId": "5f8f6cb4-1f7b-43d5-a57b-c6286a1f3e9d",
+        "titleSection": "Disclosing Party Information",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "a8f7a1e5-2345-42c7-b10a-4a0cb7a3e4c3",
+            "entityName": "DisclosingParty",
+            "title": "Disclosing Party's Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "e0d87298-8d14-4377-9f97-692c15a8f4d3",
+            "entityName": "DisclosingParty",
+            "title": "Address",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "groupId": "d5e5b89e-540e-4f0c-b5dd-3bfc1b95c6a6",
+        "titleSection": "Receiving Party Information",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "b1e3c4d6-74a2-4c6c-a1f0-9b2a1d7e2f8f",
+            "entityName": "ReceivingParty",
+            "title": "Receiving Party's Name",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "f4e7e8f8-d2a4-4e6e-91a1-5c8a4b9c8e9e",
+            "entityName": "ReceivingParty",
+            "title": "Address",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      },
+      {
+        "groupId": "c8a7e6c8-3d2e-49c6-8d2d-3e4b8e5a9b2d",
+        "titleSection": "Confidential Information",
+        "isRepeatCard": false,
+        "disabled": false,
+        "gridDisplay": 1,
+        "aliases": [
+          {
+            "id": "d1e3c2d1-1f7a-4b6a-b5dd-3bfc1b9c1a3e",
+            "entityName": "ConfidentialInformation",
+            "title": "Description of Confidential Information",
+            "type": "textarea",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          },
+          {
+            "id": "d2e3f4d5-6e5a-4c6f-a1f0-9b2a1d7e2f8e",
+            "entityName": "ConfidentialInformation",
+            "title": "Term of Confidentiality",
+            "type": "text",
+            "display": "show",
+            "source": "manual",
+            "typeSetting": {
+              "fieldType": "text",
+              "defaultValue": "",
+              "readOnly": false,
+              "required": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
